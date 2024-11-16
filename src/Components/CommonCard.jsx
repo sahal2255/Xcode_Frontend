@@ -20,21 +20,18 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const CommonCard = ({ name, price, imageUrl, brand, discount, onAddToCart,discountPrice }) => {
-  // Generate a random rating between 1 and 5
   const randomRating = (Math.random() * (5 - 1) + 1).toFixed(1);
 
-  // Calculate discounted price
-  // const discountedPrice = price - (price * discount / 100);
 
   return (
     <StyledCard>
-      {/* Product Image */}
       <CardMedia
         component="img"
         image={imageUrl}
         alt={name}
         sx={{
-          width: '100%',  
+          width: '300px', 
+          height:'300px', 
           objectFit: 'cover', 
         }}
       />

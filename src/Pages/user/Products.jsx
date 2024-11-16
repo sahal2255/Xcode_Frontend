@@ -104,7 +104,7 @@ export default function Products() {
             const discountedPrice = productPrice - (productPrice * product.discount) / 100;
 
             return (
-              <div key={product._id} className="flex-3 gap-4">
+              <div key={product._id} className="flex-3 gap-2">
                 <ProductCard
                   name={product.productName}
                   price={productPrice} // Ensure price is a number
